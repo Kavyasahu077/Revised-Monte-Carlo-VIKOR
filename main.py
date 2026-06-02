@@ -27,7 +27,7 @@ def main():
         "Component": COMPONENTS,
         "Risk Score": mean_q,
         "Rank1 Probability": rank_store[:, 0] / N_SIM
-    }).sort_values("Risk Score")
+        }).sort_values("Risk Score", ascending=False)
 
     print("\nFINAL RISK RANKING:\n", result_df)
 
