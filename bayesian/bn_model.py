@@ -15,13 +15,13 @@ def bayesian_inference(df):
 
         # Causal influence strength
         if row["Component"] == "Turbine":
-            p = base + 0.70 * vib
+            p = base + 0.80 * vib
 
         elif row["Component"] == "Pump":
-            p = base + 0.65 * vib
+            p = base + 0.60 * vib
 
         elif row["Component"] == "Valve":
-            p = base + 0.2 * vib
+            p = base + 0.20 * vib
 
         elif row["Component"] == "Sensor":
             p = base + 0.01 * vib
