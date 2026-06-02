@@ -12,7 +12,7 @@ def plot_risk(result_df):
 
 def plot_rank_probability(rank_store, components):
 
-    rank1 = rank_store[:, 0] / np.sum(rank_store)
+    rank1 = rank_store[:, 0] / rank_store[:, 0].sum()
 
     plt.figure()
     plt.bar(components, rank1)
