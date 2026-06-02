@@ -13,4 +13,11 @@ FINAL RISK RANKING:
 3     Valve  3.138957e-01             0.0000
 2    Sensor  1.509936e-09             0.0000
 
+Expected results show:
+
+1.Turbine – Highest Risk
+2.Pump – High Risk
+3.Valve – Moderate Risk
+4.Sensor – Lowest Risk
+
 Please find 3 attached output named screenshot in this folder.
