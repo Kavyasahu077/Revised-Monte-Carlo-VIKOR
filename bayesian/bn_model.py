@@ -14,14 +14,17 @@ def bayesian_inference(df):
         vib = row["Vibration"]
 
         # Causal influence strength
-        if row["Component"] == "Pump":
-            p = base + 0.55 * vib
-        elif row["Component"] == "Turbine":
-            p = base + 0.35 * vib
+        if row["Component"] == "Turbine":
+            p = base + 0.70 * vib
+
+        elif row["Component"] == "Pump":
+            p = base + 0.65 * vib
+
         elif row["Component"] == "Valve":
-            p = base + 0.25 * vib
-        else:
-            p = base + 0.15 * vib
+            p = base + 0.2 * vib
+
+        elif row["Component"] == "Sensor":
+            p = base + 0.01 * vib
 
         probs[row["Component"]] = min(p, 0.99)
 
