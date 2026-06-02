@@ -10,16 +10,16 @@ def generate_data():
 
         [
             "Pump",
-            np.random.uniform(0.10, 0.30), # Failure_Prob
-            np.random.uniform(0.70, 0.95), # Severity
+            np.random.uniform(0.15, 0.30), # Failure_Prob
+            np.random.uniform(0.80, 0.95), # Severity
             np.random.uniform(0.50, 0.70), # Detectability
             np.random.uniform(0.70, 1.00)  # Vibration
         ],
 
         [
             "Turbine",
-            np.random.uniform(0.15, 0.35), # Failure_Prob
-            np.random.uniform(0.80, 1.00), # Severity
+            np.random.uniform(0.20, 0.35), # Failure_Prob
+            np.random.uniform(0.90, 1.00), # Severity
             np.random.uniform(0.40, 0.60), # Detectability
             np.random.uniform(0.80, 1.00)  # Vibration
         ],
