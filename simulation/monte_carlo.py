@@ -39,7 +39,7 @@ def run_monte_carlo(df, n_sim=10000):
         Q = vikor(matrix, weights)
         q_store.append(Q)
 
-        ranking = np.argsort(Q)
+        ranking = np.argsort(-Q)
 
         for pos, idx in enumerate(ranking):
             rank_store[idx, pos] += 1
