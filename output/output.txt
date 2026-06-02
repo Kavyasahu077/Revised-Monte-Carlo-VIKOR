@@ -1,1 +1,16 @@
-Please find 2 attached output named screenshot in this folder.
+# Expected Output
+INPUT DATA:
+   Component  Failure_Prob  Severity  Detectability  Vibration
+0      Pump      0.223250  0.745961       0.524672   0.914270     
+1   Turbine      0.273173  0.838415       0.506132   0.869543     
+2    Sensor      0.039346  0.330266       0.981016   0.060717     
+3     Valve      0.133973  0.608700       0.620579   0.427458     
+
+FINAL RISK RANKING:
+   Component    Risk Score  Rank1 Probability
+1   Turbine  9.999726e-01             0.9969
+0      Pump  8.814685e-01             0.0031
+3     Valve  3.138957e-01             0.0000
+2    Sensor  1.509936e-09             0.0000
+
+Please find 3 attached output named screenshot in this folder.
